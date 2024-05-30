@@ -6,7 +6,7 @@
 /*   By: rohoffma <rohoffma@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 14:29:15 by rohoffma          #+#    #+#             */
-/*   Updated: 2024/05/30 18:11:49 by rohoffma         ###   ########.fr       */
+/*   Updated: 2024/05/30 18:38:29 by rohoffma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,31 @@ void	ft_putnbr(int nb)
 	if (nb >= 10)
 	{
 		ft_putnbr(nb / 10);
+		c = (nb % 10) + '0';
+		write(1, &c, 1);
+	}
+	else
+	{
+		c = (nb % 10) + '0';
+		write(1, &c, 1);
+	}
+}
+
+void	ft_putstr(char *s)
+{
+	while (*s)
+	{
+		write(1, s++, 1);
+	}
+}
+
+void	ft_putunint(unsigned int nb)
+{
+	char	c;
+
+	if (nb >= 10)
+	{
+		ft_putunint(nb / 10);
 		c = (nb % 10) + '0';
 		write(1, &c, 1);
 	}

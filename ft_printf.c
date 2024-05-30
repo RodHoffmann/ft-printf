@@ -6,7 +6,7 @@
 /*   By: rohoffma <rohoffma@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 13:23:46 by rohoffma          #+#    #+#             */
-/*   Updated: 2024/05/30 18:00:07 by rohoffma         ###   ########.fr       */
+/*   Updated: 2024/05/30 19:20:20 by rohoffma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,14 @@ void	print_arg(char c, va_list args)
 		ft_putchar(va_arg(args, int));
 	else if (c == 'd' || c == 'i')
 		ft_putnbr(va_arg(args, int));
+	else if (c == 's')
+		ft_putstr(va_arg(args, char *));
+	else if (c == 'u')
+		ft_putunint(va_arg(args, unsigned int));
+	else if (c == '%')
+		ft_putchar('%');
+	else if (c == 'x')
+		ft_puthex_lower(va_arg(args, unsigned int));
+	else if (c == 'X')
+		ft_puthex_upper(va_arg(args, unsigned int));
 }
