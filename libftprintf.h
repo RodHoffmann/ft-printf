@@ -6,7 +6,7 @@
 /*   By: rohoffma <rohoffma@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:43:03 by rohoffma          #+#    #+#             */
-/*   Updated: 2024/05/30 19:18:24 by rohoffma         ###   ########.fr       */
+/*   Updated: 2024/05/31 23:44:28 by rohoffma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ void	ft_putstr(char *s);
 void	ft_putunint(unsigned int nb);
 void	ft_puthex_lower(unsigned int nb);
 void	ft_puthex_upper(unsigned int nb);
+void	ft_putptr(void *ptr);
 
 #endif /* LIBFTPRINTF_H */

@@ -6,7 +6,7 @@
 #    By: rohoffma <rohoffma@student.42berlin.d      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:48:45 by rohoffma          #+#    #+#              #
-#    Updated: 2024/05/30 19:10:42 by rohoffma         ###   ########.fr        #
+#    Updated: 2024/05/31 23:33:46 by rohoffma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ all: $(NAME)
 #	$(CC) $(CFLAGS) $(OBJS) -o libftprintf
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) -lbsd
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBS) #-lbsd
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
