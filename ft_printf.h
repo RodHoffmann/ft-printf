@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rohoffma <rohoffma@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:43:03 by rohoffma          #+#    #+#             */
-/*   Updated: 2024/05/31 23:44:28 by rohoffma         ###   ########.fr       */
+/*   Updated: 2024/06/14 13:39:47 by rohoffma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 int	ft_printf(const char *format, ...);
-void	ft_putchar(char c);
-void	ft_putnbr(int nb);
-void	ft_putstr(char *s);
-void	ft_putunint(unsigned int nb);
-void	ft_puthex_lower(unsigned int nb);
-void	ft_puthex_upper(unsigned int nb);
-void	ft_putptr(void *ptr);
+int	ft_putchar(int i);
+int	ft_putnbr(int nb);
+int	ft_putstr(char *s);
+int	ft_putunint(unsigned int nb);
+int	ft_puthex_lower(unsigned int nb);
+int	ft_puthex_upper(unsigned int nb);
+int	ft_putptr(void *ptr);
 
-#endif /* LIBFTPRINTF_H */
+#endif /* FT_PRINTF_H */
