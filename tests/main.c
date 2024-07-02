@@ -6,7 +6,7 @@
 /*   By: rohoffma <rohoffma@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:52:04 by rohoffma          #+#    #+#             */
-/*   Updated: 2024/06/14 16:09:21 by rohoffma         ###   ########.fr       */
+/*   Updated: 2024/07/02 16:24:35 by rohoffma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	main(void)
 	int	test10;
 	int	test11_ft;
 	int	test11;
+	int	test12_ft;
+	int	test12;
 	char	c = 'a';
 	char	*ptr = &c;
 	char	*null_ptr = NULL;
@@ -78,6 +80,9 @@ int	main(void)
 	test11_ft = ft_printf("ft_printf: testing for 2 strings: %s %s\n", "hello", "world");
 	test11 = printf("or_printf: testing for 2 strings: %s %s\n", "hello", "world");
 	return_test(test11_ft, test11);
+	test12_ft = ft_printf("ft_printf: testing for pointer address of 0: %p\n", NULL);
+	test12 = printf("or_printf: testing for pointer address of 0: %p\n", NULL);
+	return_test(test12_ft, test12);
 	ft_printf("------- End of tests for ft_printf -------\n");
 	return (0);
 }
